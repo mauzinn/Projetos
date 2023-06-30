@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculadora simples com HTML e JAVASCRIPT</title>
+</head>
+<body>
+
+    <script>
+        function calculo() {
+            var pri = parseInt(document.getElementById('pri').value);
+            var seg = parseInt(document.getElementById('seg').value);
+            resu = pri + seg;
+            document.getElementById('resu').value = resu;
+}
+    </script>
+
+    <h1>Calculadora</h1><br><br>
+
+    <form oninput="calculo()">
+        <section>
+            <label>Primeiro número:</label>
+            <input id="pri" type="number" placeholder="Número"><br><br>
+        </section>
+
+        <section>
+            <label>Segundo número:</label>
+            <input id="seg" type="number" placeholder="Número"><br><br><br>
+        </section>
+
+        <section>
+            <input id="resu" type="number" placeholder="resultado" readonly>
+        </section>
+    </form><br><br>
+
+    <section>
+        <p>Primeiramente quero dizer que isso foi feito por teste, eu tenho menos de 5 dias que estou focado em aprender HTML CSS e JAVASCRIPT então,<br>muitos vão falar que ficou uma merda mas não usei CSS e  so tentei fazer uma calculadora funcional :D</p>
+        <br><br>
+        <p>Se quiser ver o codigo pode "inspecionar" a pagina estou me dedicando para ficar bom em programação! e formatar e marcar textos com html e css</p>
+    </section>
+</body>
+</html>
